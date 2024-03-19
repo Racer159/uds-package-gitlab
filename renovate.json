@@ -19,6 +19,10 @@
       "labels": ["package-deps"],
       "commitMessageTopic": "package-deps",
       "matchDatasources": ["docker", "helm", "git-tags"]
+    },
+    {
+      "matchPackageNames": ["https://repo1.dso.mil/big-bang/product/packages/gitlab.git"],
+      "allowedVersions": "/.+-bb.+/"
     }
   ]
 }
