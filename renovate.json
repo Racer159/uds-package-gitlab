@@ -1,6 +1,6 @@
 {
   "extends": [
-    "github>defenseunicorns/uds-common//config/renovate.json5",
+    "github>Racer159/uds-common//config/renovate.json5",
     ":semanticCommits",
     ":semanticPrefixFixDepsChoreOthers",
     "group:all",
@@ -18,14 +18,7 @@
       "groupName": "Gitlab Package Dependencies",
       "labels": ["package-deps"],
       "commitMessageTopic": "package-deps",
-      "registryUrls": ["https://registry1.dso.mil"],
-      "matchDatasources": ["docker"]
-    },
-    {
-      "groupName": "Gitlab Package Dependencies",
-      "labels": ["package-deps"],
-      "commitMessageTopic": "package-deps",
-      "matchDatasources": ["helm"]
+      "matchDatasources": ["docker", "helm", "git-tags"]
     }
   ]
 }
